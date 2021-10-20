@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/makeCard.css">
+    <link rel="stylesheet" href="css/ress.css">
+</head>
+<body>
+    <div class="wrapper">
+        <form action="checkCard.html" method="get">
+            <div class="card">
+                <h1 class="card__percentage" id="cardPersentage"></h1>
+                <div class="card__box" id="card">
+                    <img alt="" class="card__box__frame" id="cardFrame">
+                    <canvas width="273px" height="438px" class="card__box_img"></canvas>
+                    <p class="card__box__count" id="number"></p>
+                </div>
+            </div>
+            <div class="Btn" id="Btn">
+                <i class="Btn__frame">
+                    <button id="btn">次へ</button>
+                </i>
+            </div>
+        </form>
+    </div>
+    <script src="js/makeCard.js"></script>
+</body>
+</html>

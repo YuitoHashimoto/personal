@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="266" height="66" viewBox="0 0 266 66">
+  <defs>
+    <filter id="合体_2" x="0" y="0" width="266" height="66" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="グループ_537" data-name="グループ 537" transform="translate(-3678 82)">
+    <g transform="matrix(1, 0, 0, 1, 3678, -82)" filter="url(#合体_2)">
+      <path id="合体_2-2" data-name="合体 2" d="M-2987.289,0-2975,24l-12.289,24Zm-223.423,48L-3223,24l12.288-24h223.423V48Z" transform="translate(3232 6)" fill="#731919"/>
+    </g>
+  </g>
+</svg>

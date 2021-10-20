@@ -1,0 +1,186 @@
+@import "_ress";
+@import "_ver";
+
+
+body{
+    // background: #eee;
+
+    width: 100vw;
+    height: 100vh;
+    background: url("../img/back.svg") center;
+    background-size: cover;
+}
+.head{
+    position: fixed;
+    top: 69px;
+    width: 100%;
+    height: 34px;
+    padding: 0 16px;
+    &_navbox{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        position: relative;
+        .logo{
+            position: absolute;
+            left: 0; 
+            cursor: pointer;
+        }
+        &_nav{
+            display: flex;
+            list-style: none;
+            position: absolute;
+            right: 0;
+            &_inner{
+                width: 34px;
+                height: 34px;
+                border: solid 1px #260202;
+                border-color: rgba(38,2,2,0.08);
+                border-radius: 50%;
+                background-color: #FFFFFF;
+                cursor: pointer;
+                &:nth-child(1){
+                    background: url("../img/gear.svg") center no-repeat;
+                    background-color: #FFFFFF;
+                }
+                &:nth-child(2){
+                    background: url("../img/question.svg") center no-repeat;
+                    background-color: #FFFFFF;
+                    margin-left: 8px;
+                    
+                }
+            }
+        }
+    }
+
+}
+
+.main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    #left{
+       
+        width: 22px;
+        height: 48px;
+        border-right: solid red 11px;
+        border-bottom: 24px solid transparent ;
+        border-left: 11px solid transparent ;
+        border-top: 24px solid transparent ;
+        position: relative;
+        top: -40px;
+        cursor: pointer;
+    }
+    #right{
+       @extend #left;
+        border-left: solid red 11px;
+        border-right: 11px solid transparent ;
+    }
+    
+    &__cardbox{
+        width: 274px;
+        height: 514px;
+        overflow: hidden;
+        position: relative;
+       
+       
+        &__wrap{
+            width: 1000%;
+            height: 438px;
+            display: flex;
+            list-style: none;
+            transition: 0.2s;
+            transform: translateX(-30%);
+            &__card{
+                width: 274px;
+                height: 438px;
+                background-color: #333;
+                &:nth-child(1){
+                    background-color: palevioletred;
+                }
+                &:nth-child(2){
+                    background-color: red;
+                }
+                &:nth-child(3){
+                    background-color: beige;
+                }
+                &:nth-child(4){
+                    background-color: palevioletred;
+                }
+                &:nth-child(5){
+                    background-color: red;
+                }
+                &:nth-child(6){
+                    background-color: beige;
+                }
+                &:nth-child(7){
+                    background-color: palevioletred;
+                }
+                &:nth-child(8){
+                    background-color: red;
+                }
+                &:nth-child(9){
+                    background-color: beige;
+                }
+              
+            }
+        }
+        &__name{
+            text-align: center;
+            width: 222px;
+            height: 30px;
+            line-height: 30px;
+            margin: 36px auto 0;
+            // padding: 1px;
+            // overflow: hidden;
+            background-color: rgba(166,125,3,0.2);
+            clip-path: polygon(10px 0px,212px 0px,222px 15px,212px 30px,10px 30px,0px 15px);
+            position: relative;
+            &__inner{
+                display: inline-block;
+                font-size: 12px;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin: auto;
+                width: 220px;
+                height: 28px;
+                clip-path: polygon(9.5px 0px,210.5px 0px,220px 14px,210.5px 28px,9.5px 28px,0px 14px);
+                background-color: #FFF;
+            }
+        }
+    }
+}
+
+.foot{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    svg{
+        
+        path{
+            cursor: pointer;
+        }
+        &:nth-child(2){
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+       
+        position: relative;
+        // vertical-align: top;
+    //    preserveAspectRatio="none"
+        // display: inline-block;
+        
+    }
+}

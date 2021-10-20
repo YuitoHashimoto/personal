@@ -1,0 +1,657 @@
+body {
+  margin: 0;
+}
+
+#click {
+  width: 100px;
+  height: 50px;
+  position: fixed;
+  top: 20px;
+}
+
+#window {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#window #innerWindow {
+  width: 200vw;
+  height: 100vh;
+  display: flex;
+}
+
+#window #innerWindow #box01 {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: #046C20;
+}
+
+#window #innerWindow #box01 .user {
+  width: 120px;
+  height: 20px;
+  position: absolute;
+  background: #fff;
+}
+
+#window #innerWindow #box01 .user:nth-of-type(1) {
+  bottom: 10px;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  z-index: 500;
+}
+
+#window #innerWindow #box01 .user:nth-of-type(2) {
+  top: 65%;
+  right: 10px;
+  z-index: 500;
+}
+
+#window #innerWindow #box01 .user:nth-of-type(3) {
+  top: 10px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 500;
+}
+
+#window #innerWindow #box01 .user:nth-of-type(4) {
+  top: 65%;
+  left: 10px;
+  z-index: 500;
+}
+
+#window #innerWindow #box01 #btn {
+  width: 248px;
+  height: 48px;
+  position: absolute;
+  bottom: 40px;
+  z-index: 500;
+  display: none;
+}
+
+#window #innerWindow #box01 .anime {
+  font-size: 70px;
+  transition: 1.2s;
+  -webkit-animation: anime 0.5s 1 2s;
+          animation: anime 0.5s 1 2s;
+  position: relative;
+  z-index: 500;
+}
+
+#window #innerWindow #box01 .anime:nth-child(1) {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+#window #innerWindow #box01 .anime:nth-child(2) {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-animation: anm 2s 1;
+          animation: anm 2s 1;
+  display: none;
+}
+
+#window #innerWindow #box01 .card, #window #innerWindow #box01 .innerbox:nth-of-type(3) .cardOther, #window #innerWindow #box01 .innerbox:nth-of-type(4) .cardOther, #window #innerWindow #box01 .innerbox:nth-of-type(2) .cardOther {
+  background-image: url(../img/cardBack.svg);
+  background-size: contain;
+  width: 77px;
+  height: 123px;
+  border: solid 1px gray;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transition: 0.3s;
+  z-index: 20;
+}
+
+#window #innerWindow #box01 .innerbox {
+  width: 100vw;
+  height: 200px;
+  position: absolute;
+  bottom: 10px;
+  transition: 0.3s;
+}
+
+#window #innerWindow #box01 .innerbox:nth-of-type(3) {
+  top: 10px;
+  height: 100px;
+  -webkit-transform: rotate(180deg) scale(1);
+          transform: rotate(180deg) scale(1);
+}
+
+#window #innerWindow #box01 .innerbox:nth-of-type(3) .defaultcard {
+  -webkit-transform: translateY(calc(-40vh + 50%)) scale(0.2);
+          transform: translateY(calc(-40vh + 50%)) scale(0.2);
+}
+
+#window #innerWindow #box01 .innerbox:nth-of-type(3) .cardOther {
+  z-index: 10;
+}
+
+#window #innerWindow #box01 .innerbox:nth-of-type(3) .scardAnimation:nth-child(1) {
+  -webkit-transform: translate(-80px, 10px) rotate(-20deg) scale(0.7);
+          transform: translate(-80px, 10px) rotate(-20deg) scale(0.7);
+}
+
+#window #innerWindow #box01 .innerbox:nth-of-type(3) .scardAnimation:nth-child(2) {
+  -webkit-transform: translate(-40px, -5px) rotate(-10deg) scale(0.7);
+          transform: translate(-40px, -5px) rotate(-10deg) scale(0.7);
+}
+
+#window #innerWindow #box01 .innerbox:nth-of-type(3) .scardAnimation:nth-child(3) {
+  -webkit-transform: translateY(-10px) scale(0.7);
+          transform: translateY(-10px) scale(0.7);
+}
+
+#window #innerWindow #box01 .innerbox:nth-of-type(3) .scardAnimation:nth-child(4) {
+  -webkit-transform: translate(40px, -5px) rotate(10deg) scale(0.7);
+          transform: translate(40px, -5px) rotate(10deg) scale(0.7);
+}
+
+#window #innerWindow #box01 .innerbox:nth-of-type(3) .scardAnimation:nth-child(5) {
+  -webkit-transform: translate(80px, 10px) rotate(20deg) scale(0.7);
+          transform: translate(80px, 10px) rotate(20deg) scale(0.7);
+}
+
+#window #innerWindow #box01 .innerbox:nth-of-type(3) .fcardAnimation {
+  transition: 0.5s;
+  -webkit-transform: translateY(0) scale(0.7);
+          transform: translateY(0) scale(0.7);
+}
+
+#window #innerWindow #box01 .innerbox:nth-of-type(3) .cardPosition4:nth-child(1) {
+  -webkit-transform: translate(-75px, 15px) rotate(-15deg) scale(0.7);
+          transform: translate(-75px, 15px) rotate(-15deg) scale(0.7);
+}
+
+#window #innerWindow #box01 .innerbox:nth-of-type(3) .cardPosition4:nth-child(2) {
+  -webkit-transform: translate(-25px, 5px) rotate(-5deg) scale(0.7);
+          transform: translate(-25px, 5px) rotate(-5deg) scale(0.7);
+}
+
+#window #innerWindow #box01 .innerbox:nth-of-type(3) .cardPosition4:nth-child(3) {
+  -webkit-transform: translate(25px, 5px) rotate(5deg) scale(0.7);
+          transform: translate(25px, 5px) rotate(5deg) scale(0.7);
+}
+
+#window #innerWindow #box01 .innerbox:nth-of-type(3) .cardPosition4:nth-child(4) {
+  -webkit-transform: translate(75px, 15px) rotate(15deg) scale(0.7);
+          transform: translate(75px, 15px) rotate(15deg) scale(0.7);
+}
+
+#window #innerWindow #box01 .innerbox:nth-of-type(3) .cardPosition3:nth-child(1) {
+  -webkit-transform: translate(-50px, -5px) rotate(-10deg) scale(0.7);
+          transform: translate(-50px, -5px) rotate(-10deg) scale(0.7);
+}
+
+#window #innerWindow #box01 .innerbox:nth-of-type(3) .cardPosition3:nth-child(2) {
+  -webkit-transform: translateY(-10px) scale(0.7);
+          transform: translateY(-10px) scale(0.7);
+}
+
+#window #innerWindow #box01 .innerbox:nth-of-type(3) .cardPosition3:nth-child(3) {
+  -webkit-transform: translate(50px, -5px) rotate(10deg) scale(0.7);
+          transform: translate(50px, -5px) rotate(10deg) scale(0.7);
+}
+
+#window #innerWindow #box01 .innerbox:nth-of-type(3) .cardPosition2:nth-child(1) {
+  -webkit-transform: translate(-25px, 5px) rotate(-5deg) scale(0.7);
+          transform: translate(-25px, 5px) rotate(-5deg) scale(0.7);
+}
+
+#window #innerWindow #box01 .innerbox:nth-of-type(3) .cardPosition2:nth-child(2) {
+  -webkit-transform: translate(25px, 5px) rotate(5deg) scale(0.7);
+          transform: translate(25px, 5px) rotate(5deg) scale(0.7);
+}
+
+#window #innerWindow #box01 .innerbox:nth-of-type(4) {
+  top: 0;
+  bottom: 10px;
+  left: -38%;
+  margin: auto;
+  height: 50px;
+  -webkit-transform: rotate(90deg) scale(1);
+          transform: rotate(90deg) scale(1);
+}
+
+#window #innerWindow #box01 .innerbox:nth-of-type(4) .defaultcard {
+  -webkit-transform: translateY(calc(-29vh + 50%)) scale(0.2);
+          transform: translateY(calc(-29vh + 50%)) scale(0.2);
+}
+
+#window #innerWindow #box01 .innerbox:nth-of-type(4) .scardAnimation:nth-child(1) {
+  -webkit-transform: translate(-80px, 10px) rotate(-20deg) scale(0.7);
+          transform: translate(-80px, 10px) rotate(-20deg) scale(0.7);
+}
+
+#window #innerWindow #box01 .innerbox:nth-of-type(4) .scardAnimation:nth-child(2) {
+  -webkit-transform: translate(-40px, -5px) rotate(-10deg) scale(0.7);
+          transform: translate(-40px, -5px) rotate(-10deg) scale(0.7);
+}
+
+#window #innerWindow #box01 .innerbox:nth-of-type(4) .scardAnimation:nth-child(3) {
+  -webkit-transform: translateY(-10px) scale(0.7);
+          transform: translateY(-10px) scale(0.7);
+}
+
+#window #innerWindow #box01 .innerbox:nth-of-type(4) .scardAnimation:nth-child(4) {
+  -webkit-transform: translate(40px, -5px) rotate(10deg) scale(0.7);
+          transform: translate(40px, -5px) rotate(10deg) scale(0.7);
+}
+
+#window #innerWindow #box01 .innerbox:nth-of-type(4) .scardAnimation:nth-child(5) {
+  -webkit-transform: translate(80px, 10px) rotate(20deg) scale(0.7);
+          transform: translate(80px, 10px) rotate(20deg) scale(0.7);
+}
+
+#window #innerWindow #box01 .innerbox:nth-of-type(4) .fcardAnimation {
+  transition: 0.5s;
+  -webkit-transform: translateY(0) scale(0.7);
+          transform: translateY(0) scale(0.7);
+}
+
+#window #innerWindow #box01 .innerbox:nth-of-type(4) .cardPosition4:nth-child(1) {
+  -webkit-transform: translate(-75px, 15px) rotate(-15deg) scale(0.7);
+          transform: translate(-75px, 15px) rotate(-15deg) scale(0.7);
+}
+
+#window #innerWindow #box01 .innerbox:nth-of-type(4) .cardPosition4:nth-child(2) {
+  -webkit-transform: translate(-25px, 5px) rotate(-5deg) scale(0.7);
+          transform: translate(-25px, 5px) rotate(-5deg) scale(0.7);
+}
+
+#window #innerWindow #box01 .innerbox:nth-of-type(4) .cardPosition4:nth-child(3) {
+  -webkit-transform: translate(25px, 5px) rotate(5deg) scale(0.7);
+          transform: translate(25px, 5px) rotate(5deg) scale(0.7);
+}
+
+#window #innerWindow #box01 .innerbox:nth-of-type(4) .cardPosition4:nth-child(4) {
+  -webkit-transform: translate(75px, 15px) rotate(15deg) scale(0.7);
+          transform: translate(75px, 15px) rotate(15deg) scale(0.7);
+}
+
+#window #innerWindow #box01 .innerbox:nth-of-type(4) .cardPosition3:nth-child(1) {
+  -webkit-transform: translate(-50px, -5px) rotate(-10deg) scale(0.7);
+          transform: translate(-50px, -5px) rotate(-10deg) scale(0.7);
+}
+
+#window #innerWindow #box01 .innerbox:nth-of-type(4) .cardPosition3:nth-child(2) {
+  -webkit-transform: translateY(-10px) scale(0.7);
+          transform: translateY(-10px) scale(0.7);
+}
+
+#window #innerWindow #box01 .innerbox:nth-of-type(4) .cardPosition3:nth-child(3) {
+  -webkit-transform: translate(50px, -5px) rotate(10deg) scale(0.7);
+          transform: translate(50px, -5px) rotate(10deg) scale(0.7);
+}
+
+#window #innerWindow #box01 .innerbox:nth-of-type(4) .cardPosition2:nth-child(1) {
+  -webkit-transform: translate(-25px, 5px) rotate(-5deg) scale(0.7);
+          transform: translate(-25px, 5px) rotate(-5deg) scale(0.7);
+}
+
+#window #innerWindow #box01 .innerbox:nth-of-type(4) .cardPosition2:nth-child(2) {
+  -webkit-transform: translate(25px, 5px) rotate(5deg) scale(0.7);
+          transform: translate(25px, 5px) rotate(5deg) scale(0.7);
+}
+
+#window #innerWindow #box01 .innerbox:nth-of-type(2) {
+  top: 0;
+  bottom: 10px;
+  right: -38%;
+  margin: auto;
+  height: 50px;
+  -webkit-transform: rotate(270deg) scale(1);
+          transform: rotate(270deg) scale(1);
+}
+
+#window #innerWindow #box01 .innerbox:nth-of-type(2) .defaultcard {
+  -webkit-transform: translateY(calc(-29vh + 50%)) scale(0.2);
+          transform: translateY(calc(-29vh + 50%)) scale(0.2);
+}
+
+#window #innerWindow #box01 .innerbox:nth-of-type(2) .scardAnimation:nth-child(1) {
+  -webkit-transform: translate(-80px, 10px) rotate(-20deg) scale(0.7);
+          transform: translate(-80px, 10px) rotate(-20deg) scale(0.7);
+}
+
+#window #innerWindow #box01 .innerbox:nth-of-type(2) .scardAnimation:nth-child(2) {
+  -webkit-transform: translate(-40px, -5px) rotate(-10deg) scale(0.7);
+          transform: translate(-40px, -5px) rotate(-10deg) scale(0.7);
+}
+
+#window #innerWindow #box01 .innerbox:nth-of-type(2) .scardAnimation:nth-child(3) {
+  -webkit-transform: translateY(-10px) scale(0.7);
+          transform: translateY(-10px) scale(0.7);
+}
+
+#window #innerWindow #box01 .innerbox:nth-of-type(2) .scardAnimation:nth-child(4) {
+  -webkit-transform: translate(40px, -5px) rotate(10deg) scale(0.7);
+          transform: translate(40px, -5px) rotate(10deg) scale(0.7);
+}
+
+#window #innerWindow #box01 .innerbox:nth-of-type(2) .scardAnimation:nth-child(5) {
+  -webkit-transform: translate(80px, 10px) rotate(20deg) scale(0.7);
+          transform: translate(80px, 10px) rotate(20deg) scale(0.7);
+}
+
+#window #innerWindow #box01 .innerbox:nth-of-type(2) .fcardAnimation {
+  transition: 0.5s;
+  -webkit-transform: translateY(0) scale(0.7);
+          transform: translateY(0) scale(0.7);
+}
+
+#window #innerWindow #box01 .innerbox:nth-of-type(2) .cardPosition4:nth-child(1) {
+  -webkit-transform: translate(-75px, 15px) rotate(-15deg) scale(0.7);
+          transform: translate(-75px, 15px) rotate(-15deg) scale(0.7);
+}
+
+#window #innerWindow #box01 .innerbox:nth-of-type(2) .cardPosition4:nth-child(2) {
+  -webkit-transform: translate(-25px, 5px) rotate(-5deg) scale(0.7);
+          transform: translate(-25px, 5px) rotate(-5deg) scale(0.7);
+}
+
+#window #innerWindow #box01 .innerbox:nth-of-type(2) .cardPosition4:nth-child(3) {
+  -webkit-transform: translate(25px, 5px) rotate(5deg) scale(0.7);
+          transform: translate(25px, 5px) rotate(5deg) scale(0.7);
+}
+
+#window #innerWindow #box01 .innerbox:nth-of-type(2) .cardPosition4:nth-child(4) {
+  -webkit-transform: translate(75px, 15px) rotate(15deg) scale(0.7);
+          transform: translate(75px, 15px) rotate(15deg) scale(0.7);
+}
+
+#window #innerWindow #box01 .innerbox:nth-of-type(2) .cardPosition3:nth-child(1) {
+  -webkit-transform: translate(-50px, -5px) rotate(-10deg) scale(0.7);
+          transform: translate(-50px, -5px) rotate(-10deg) scale(0.7);
+}
+
+#window #innerWindow #box01 .innerbox:nth-of-type(2) .cardPosition3:nth-child(2) {
+  -webkit-transform: translateY(-10px) scale(0.7);
+          transform: translateY(-10px) scale(0.7);
+}
+
+#window #innerWindow #box01 .innerbox:nth-of-type(2) .cardPosition3:nth-child(3) {
+  -webkit-transform: translate(50px, -5px) rotate(10deg) scale(0.7);
+          transform: translate(50px, -5px) rotate(10deg) scale(0.7);
+}
+
+#window #innerWindow #box01 .innerbox:nth-of-type(2) .cardPosition2:nth-child(1) {
+  -webkit-transform: translate(-25px, 5px) rotate(-5deg) scale(0.7);
+          transform: translate(-25px, 5px) rotate(-5deg) scale(0.7);
+}
+
+#window #innerWindow #box01 .innerbox:nth-of-type(2) .cardPosition2:nth-child(2) {
+  -webkit-transform: translate(25px, 5px) rotate(5deg) scale(0.7);
+          transform: translate(25px, 5px) rotate(5deg) scale(0.7);
+}
+
+#window #innerWindow #box01 .innerbox div {
+  transition: 0.3s;
+}
+
+#window #innerWindow #box01 .innerbox .scardAnimation {
+  width: 77px;
+  height: 123px;
+  border: solid 1px gray;
+  position: absolute;
+  -webkit-transform: translateY(-40vh);
+          transform: translateY(-40vh);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transition: 0.3s;
+}
+
+#window #innerWindow #box01 .innerbox .scardAnimation:nth-child(1) {
+  -webkit-transform: translate(-100px, 10px) rotate(-20deg);
+          transform: translate(-100px, 10px) rotate(-20deg);
+}
+
+#window #innerWindow #box01 .innerbox .scardAnimation:nth-child(2) {
+  -webkit-transform: translate(-50px, -5px) rotate(-10deg);
+          transform: translate(-50px, -5px) rotate(-10deg);
+}
+
+#window #innerWindow #box01 .innerbox .scardAnimation:nth-child(3) {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+
+#window #innerWindow #box01 .innerbox .scardAnimation:nth-child(4) {
+  -webkit-transform: translate(50px, -5px) rotate(10deg);
+          transform: translate(50px, -5px) rotate(10deg);
+}
+
+#window #innerWindow #box01 .innerbox .scardAnimation:nth-child(5) {
+  -webkit-transform: translate(100px, 10px) rotate(20deg);
+          transform: translate(100px, 10px) rotate(20deg);
+}
+
+#window #innerWindow #box01 .innerbox .defaultcard {
+  width: 95px;
+  height: 135px;
+  border: solid 1px gray;
+  border-radius: 5px;
+  position: absolute;
+  -webkit-transform: translateY(calc(-50vh + 50%));
+          transform: translateY(calc(-50vh + 50%));
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transition: 0.5s;
+}
+
+#window #innerWindow #box01 .innerbox .fcardAnimation {
+  transition: 0.5s;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+#window #innerWindow #box01 .innerbox .fcardAnimation01 {
+  transition: 0.5s;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+#window #innerWindow #box01 .innerbox .fcardAnimation02 {
+  transition: 0.5s;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+#window #innerWindow #box01 .innerbox .fcardAnimation03 {
+  transition: 0.5s;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+#window #innerWindow #box01 .innerbox .cardPosition4:nth-child(1) {
+  -webkit-transform: translate(-75px, 15px) rotate(-15deg);
+          transform: translate(-75px, 15px) rotate(-15deg);
+}
+
+#window #innerWindow #box01 .innerbox .cardPosition4:nth-child(2) {
+  -webkit-transform: translate(-25px, 5px) rotate(-5deg);
+          transform: translate(-25px, 5px) rotate(-5deg);
+}
+
+#window #innerWindow #box01 .innerbox .cardPosition4:nth-child(3) {
+  -webkit-transform: translate(25px, 5px) rotate(5deg);
+          transform: translate(25px, 5px) rotate(5deg);
+}
+
+#window #innerWindow #box01 .innerbox .cardPosition4:nth-child(4) {
+  -webkit-transform: translate(75px, 15px) rotate(15deg);
+          transform: translate(75px, 15px) rotate(15deg);
+}
+
+#window #innerWindow #box01 .innerbox .cardPosition3:nth-child(1) {
+  -webkit-transform: translate(-50px, -5px) rotate(-10deg);
+          transform: translate(-50px, -5px) rotate(-10deg);
+}
+
+#window #innerWindow #box01 .innerbox .cardPosition3:nth-child(2) {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+
+#window #innerWindow #box01 .innerbox .cardPosition3:nth-child(3) {
+  -webkit-transform: translate(50px, -5px) rotate(10deg);
+          transform: translate(50px, -5px) rotate(10deg);
+}
+
+#window #innerWindow #box01 .innerbox .cardPosition2:nth-child(1) {
+  -webkit-transform: translate(-25px, 5px) rotate(-5deg);
+          transform: translate(-25px, 5px) rotate(-5deg);
+}
+
+#window #innerWindow #box01 .innerbox .cardPosition2:nth-child(2) {
+  -webkit-transform: translate(25px, 5px) rotate(5deg);
+          transform: translate(25px, 5px) rotate(5deg);
+}
+
+#window #innerWindow #box02 {
+  width: 100vw;
+  height: 100vh;
+  background-color: #046C20;
+  position: relative;
+}
+
+#window #innerWindow #box02 p {
+  width: 100%;
+  height: 20px;
+  background-color: #000;
+}
+
+#window #innerWindow #box02 .displayCard {
+  width: 77px;
+  height: 120px;
+  background-image: url(../img/cardBack.svg);
+  background-size: cover;
+  background-position: center;
+}
+
+#window #innerWindow #box02 #card01, #window #innerWindow #box02 #card03 {
+  position: absolute;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  bottom: 30px;
+  text-align: center;
+  width: 120px;
+}
+
+#window #innerWindow #box02 #card01 .displayCard, #window #innerWindow #box02 #card03 .displayCard {
+  margin: 0 auto;
+}
+
+#window #innerWindow #box02 #card02 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 10px;
+  margin: auto 0;
+  text-align: center;
+  width: 120px;
+  height: 170px;
+}
+
+#window #innerWindow #box02 #card02 .displayCard {
+  margin: 0 auto;
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+}
+
+#window #innerWindow #box02 #card03 {
+  top: 30px;
+}
+
+#window #innerWindow #box02 #card03 .displayCard {
+  margin: 0 auto;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+#window #innerWindow #box02 #card04 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 10px;
+  margin: auto 0;
+  text-align: center;
+  width: 120px;
+  height: 170px;
+}
+
+#window #innerWindow #box02 #card04 .displayCard {
+  margin: 0 auto;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+@-webkit-keyframes resultDisplay {
+  0% {
+    left: -200vh;
+  }
+  50% {
+    left: 0;
+  }
+  70% {
+    left: 0;
+  }
+  100% {
+    left: 200vh;
+  }
+}
+
+@keyframes resultDisplay {
+  0% {
+    left: -200vh;
+  }
+  50% {
+    left: 0;
+  }
+  70% {
+    left: 0;
+  }
+  100% {
+    left: 200vh;
+  }
+}
+
+.resultModal {
+  font-family: "YuGothic";
+  padding-top: 12px;
+  text-align: center;
+  color: #260202;
+  width: 100vw;
+  height: 78px;
+  background: #F9F9F9;
+  position: absolute;
+  top: 0;
+  -webkit-animation: resultDisplay  4s ease-in-out;
+          animation: resultDisplay  4s ease-in-out;
+  left: -200vh;
+  bottom: 0;
+  margin: auto;
+}
+
+.resultModal .resultTitle {
+  font-size: 28px;
+  height: 20px;
+  font-weight: bold;
+}

@@ -1,0 +1,42 @@
+.form{
+    height: 100vh;
+    background-color: #EBE2C6;
+}
+video{
+    width: 100%;
+    height: 75vh;
+    object-fit: fill;
+}
+.shutter{
+    width: 100%;
+    height: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 -5px 3px 0px rgba($color: #000000, $alpha: 0.10);
+    &__border{
+        width: 80px;
+        height: 80px;
+        border: solid 4px #A67D03;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 30px 0;
+        &__btn{
+            width: 60px;
+            height: 60px;
+            background-color: #A67D03;
+            border-radius: 100%;
+        }
+    }
+}
+
+#back { 
+    position: absolute;
+    bottom: 100px;
+    left: 20px;
+    color: #A67D03;
+    cursor: pointer;
+    user-select: none;
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/ress.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Camera test</title>
+</head>
+<body>
+    <p id="back">キャンセル</p>
+    <form action="#" method="post" class="form">
+        <video id="camera" width="375px" height="400px" playsinline muted loop autoplay></video>
+        <div class="shutter">
+            <div class="shutter__border">
+                <button id="shutter" type="button" class="shutter__border__btn"></button>
+            </div>
+        </div>
+        <canvas id="picture" width="0px" height="0px"></canvas>
+    </form>
+    <script src="js/index.js"></script>
+</body>
+</html>

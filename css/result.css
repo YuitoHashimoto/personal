@@ -1,0 +1,86 @@
+@charset "UTF-8";
+body {
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/zukei01.png);
+  background-repeat: repeat;
+}
+
+.rank {
+  height: 100%;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.rank__number {
+  width: 100%;
+  height: 100%;
+  font-family: "游ゴシック体", YuGothic;
+  font-size: 24px;
+  font-weight: lighter;
+  display: flex;
+  justify-content: center;
+}
+
+.rank__message {
+  font-family: "Avenir Next", Verdana;
+  font-size: 22px;
+}
+
+.rankingList {
+  width: 100%;
+  height: 100%;
+  margin-top: 50px;
+}
+
+.rankingList__rank {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rankingList__rank__number {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.rankingList__rank__icon {
+  width: 50px;
+  height: 50px;
+  border: solid 1px #A67D03;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 25px;
+}
+
+.rankingList__rank__name {
+  font-family: "游ゴシック体", YuGothic;
+  font-size: 16px;
+}
+
+.btn {
+  text-align: center;
+  margin-top: 70px;
+}
+
+.btn__frame {
+  display: inline-block;
+  width: 266px;
+  line-height: 60px;
+  background-image: url("../img/btn.svg");
+}
+
+.btn__frame a {
+  display: inline-block;
+  width: 266px;
+  height: 66px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  text-decoration: none;
+}

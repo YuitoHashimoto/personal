@@ -1,0 +1,22 @@
+@import "card";
+
+.Btn{
+    text-align: center;
+    margin-top: 10px;
+    &__frame{
+        display: inline-block;
+        width: 266px;
+        line-height: 66px;
+        background-image: url("../img/btn.svg");
+        a{
+            display: inline-block;
+            width: 266px;
+            height: 66px;
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: bold;
+            font-style: normal;
+            text-decoration: none;
+        }
+    }
+}
